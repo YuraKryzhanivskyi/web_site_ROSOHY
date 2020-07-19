@@ -1,0 +1,55 @@
+<div class="popup" id="popup">
+    <a href="#social" class="popup__area"></a>
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#social" class="popup__close">
+                <img src="close.svg" alt="">
+            </a>
+            <div class="section_title">Забронювати</div>
+            <div class="popup__inner">
+                <form action="https://formspree.io/kruzhanivskiy@gmail.com" method="post">
+                    <div class="input__item">
+                        <input class="input" placeholder="Ім'я" name="Ім'я" type="text" id="name">
+
+                    </div>
+                    <div class="input__item">
+                        <input class="input" placeholder="Телефон" name="Телефон" type="tel" id="phone"
+                            required="required" </div>
+
+                        <div class="section_title">Тип житла</div>
+                        <div class=" input__room">
+                            <div class="input__room__item">
+                                <input class="room__input" name="Проживання" type="checkbox" value="Стандарт"
+                                    id="standart">
+                                <label class="label__check" for="standart">Стандарт</label>
+                            </div>
+                            <div class="input__room__item">
+                                <input class="room__input" name="Проживання" type="checkbox" value="Стандарт2"
+                                    id="standart2">
+                                <label class="label__check" for="standart2">Стандарт 2-х кімнатний</label>
+                            </div>
+                            <div class="input__room__item">
+                                <input class="room__input" name="Проживання" type="checkbox" value="Будинок" id="house">
+                                <label class="label__check" for="house">Будинок</label>
+                            </div>
+                            <div class="input__room__item">
+                                <input class="room__input" name="Проживання" type="checkbox" value="Будинок+"
+                                    id="houseP">
+                                <label class="label__check" for="houseP">Будинок+</label>
+                            </div>
+                        </div>
+                        <div class="section_title">Заїзд-Виїзд</div>
+                        <div class="input-data">
+                            <input class="input__data" type="date" id="start" name="заїзд" value="" min="2020-06-06"
+                                max="2021-12-31" placeholder="заїзд">
+                            <input class="input__data" type="date" id="start" name="виїзд" value="" min="2020-06-06"
+                                max="2021-12-31" placeholder="заїзд">
+                        </div>
+                        <div class="btn-input">
+                            <input type="submit" value="Забронювати" class="btn">
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

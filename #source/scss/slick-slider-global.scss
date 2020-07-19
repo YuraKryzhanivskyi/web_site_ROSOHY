@@ -1,0 +1,58 @@
+// slider global arrow, dots
+
+.slider__img{
+    z-index: -1;
+    object-fit: cover;
+    height: 600px;
+    width: 100%; 
+}
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track{
+    display: flex;
+}
+
+.slick-arrow{
+    border: none;
+ }
+.slick-arrow.slick-prev{
+     left: 0;
+     background: url('../img/p.png') center no-repeat;
+ }
+.slick-arrow.slick-prev:hover{
+    opacity: 1;
+}
+.slick-arrow.slick-next{
+    right: 0;
+    background: url('../img/n.png') center no-repeat;
+}
+.slick-arrow.slick-next:hover{
+    opacity: 1;
+}
+ul.slick-dots{
+    padding: 0;
+    
+}
+.slick-dots{
+    
+    display: flex;
+    justify-content: center;
+}
+.slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+    
+}
+
+.slick-dots button{
+    font-size: 0;  
+    width: 10px;
+    height: 10px;
+    background-color: #46413d;
+    
+}
+.slick-dots li.slick-active button{
+    background-color: #deb06f;
+}

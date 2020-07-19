@@ -1,0 +1,70 @@
+//====================================== reviews ======================================
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.reviews__item {
+  text-align: center;
+}
+.reviews__name{
+   
+    color: #deb06f;
+    font-size: 24px;
+    font-weight: 400;
+}
+.reviews__text{
+    margin: 30px 0;
+    color: #46413d;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;    
+}
+
+.quots_l{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.quots_r{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.btn__reviews{
+text-align: center;    
+    
+    
+}
+.slider__reviews{
+    width: 50%;
+}
+.slider__reviews .slick-track{
+    align-items: flex-start;
+}
+
+.slider__reviews .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin: -15px 0px 0px 0px;
+    z-index: 2;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    opacity: 0.5;
+    
+}
+.slider__reviews .slick-arrow.slick-prev{
+    margin-left: 250px;
+}
+
+.slider__reviews .slick-arrow.slick-next{
+    margin-right: 250px;
+}
+.slider__reviews .slick-dots{
+    margin-bottom: 30px ;
+}

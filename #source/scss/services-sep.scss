@@ -1,0 +1,170 @@
+// ==================================== separate__services =====================================
+.service-header {
+    position: fixed;
+/*    display: block;*/
+    width: 100%;
+    height: auto;
+    background-color: #deb06f;
+    box-shadow: 0px 1px 5px #46413d;
+    margin-bottom: 20px;
+    z-index: 20;
+    
+    
+}
+.service-header .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    
+}
+.service-header .back-arrow,
+.service-header .logo
+{
+    height: 40px;
+    width: 180px;
+    
+}
+.logo{
+    display: inline-block;
+    text-align: center;
+}
+.service-header img {
+    height: 100%;
+}
+.service-header .back-arrow{
+    opacity: 0.6
+}
+.service-header .back-arrow:hover{
+    opacity: 0.8
+}
+.services-body{
+/*    position: relative;*/
+display: flex;
+    flex-wrap: wrap;
+
+}
+.slider-service{
+    position: relative;
+}
+.slider-service,
+.slider__item{
+    width: 70%;
+    height: 100vh;
+    overflow: hidden;
+}
+.slider__item{
+    position: relative
+}
+.slider__item .banner-img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.banner-img img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.slider-service .slick-arrow{
+    position: absolute;
+    top: 45%;
+    z-index: 2;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+/*    opacity: 0.5;*/
+    padding: 40px;
+    background-color: rgb(70,65,61,0.5);
+}
+
+.slider-service .slick-arrow:hover{
+    background-color: rgb(70,65,61,0.7);
+}
+
+.slider-service .slick-dots{
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+}
+
+.services__body__content {
+    
+    margin-top: 40px;
+    width: 30%;
+    overflow: hidden;
+    padding: 30px;
+}
+
+
+.services__body__content .section_title{
+    display: inline-block;
+    text-align: left;
+    margin-top: 0;
+}
+
+.services__body__content .section_title:after{
+   margin: 5px 0 30px;
+}
+
+
+
+.services__body__content p {
+    color: #46413d;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+.service-header .btn{
+    display: flex;
+    background-color: #46413d;
+    color: #deb06f;
+    width: 180px;
+    height: 40px;
+}
+.services__details{
+    color: #46413d;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.services__details .section_title{
+    font-size: 20px;
+}
+.services__details .section_title:after{
+    width: 100%;
+    margin-bottom: 10px;
+/*    opacity: .5*/
+}
+
+
+.services__details .unit h3 {
+    font-size: 16px;
+    font-weight: 600
+}
+
+.details__unit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.details__unit .unit__title {
+    padding-right: 50px;
+}
+.details__unit .unit__price {
+       font-size: 20px;
+    font-weight: 600;
+    color: #cb9f61;
+}
+.workshop____icon{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.workshop____icon img{
+    height: 80px;
+}

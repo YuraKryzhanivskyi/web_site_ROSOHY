@@ -1,0 +1,94 @@
+//====================================== rooms ======================================
+
+.rooms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.slider__rooms{
+    width: 90%;
+}
+.slider__rooms .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin: -15px 0px 0px 0px;
+    z-index: 2;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+}
+.slider__rooms .slick-arrow.slick-prev{
+    margin-left: -10px;     
+}
+.slider__rooms .slick-arrow.slick-next{
+    margin-right: -10px;   
+}
+.rooms__cart{
+    padding: 10px;
+}
+.rooms__item{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.rooms__item:hover .rooms__more{
+    opacity: 1;
+    transition:opacity .2s linear;
+    
+}
+.rooms__more{
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
+    color: #deb06f;
+    font-size: 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.rooms__title{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 70%;
+    bottom: 0;
+    left: 0;
+    background-color:#deb06f;
+}
+h3.rooms__title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #46413d;
+    text-transform: uppercase;
+}
+.rooms__price{
+    position: absolute;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 50px;
+    background-color:#46413d;
+}
+h3.rooms__price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #deb06f;
+}

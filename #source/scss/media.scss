@@ -1,0 +1,514 @@
+//====================================== media ======================================*/
+
+
+@media (max-width: 1300px){ 
+    .container{
+        max-width:1100px;
+    }
+    .slider__reviews .slick-arrow.slick-next{
+        margin-right:180px;
+    }
+    .slider__reviews .slick-arrow.slick-prev{
+        margin-left:180px;
+    }
+    
+
+}
+@media (max-width: 1200px){ 
+    .container{
+        max-width:950px;
+    }
+    .nav{
+        font-size: 14px;
+    }
+    .nav__link{
+        margin-left:20px;
+    }
+    .workshop__content__icon img{
+        margin-right: 30px;
+    }
+    .gallery__item{
+        height:300px;
+        
+    }
+    .intro__rooms__inner h3{
+        padding: 0 20px;
+    }
+    
+    
+}
+@media (max-width: 1030px){
+.container{
+        max-width:880px;
+    }
+      
+.burger{
+    display: flex;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 10;
+}
+.burger span{
+    position: absolute;
+    background-color: #fcfcfc;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top:9px;
+    transition: all 0.3s ease 0s;
+}
+.burger:before,
+.burger:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-color: #fcfcfc;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.burger:before{
+    top: 0;
+}
+  
+.burger:after{
+    bottom: 0;
+}
+    
+.burger.active:before{
+    transform: rotate(45deg);
+    top:9px;
+}  
+.burger.active:after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+}  
+.burger.active span{
+    transform: scale(0);    
+}    
+    
+
+.header.fixed .burger:before,
+.header.fixed .burger:after,
+.header.fixed .burger span{
+    background-color: #46413d;  
+}
+    
+    
+    .nav,
+    .header.fixed .nav{
+
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        align-items:center;
+        background-color: #deb06f;
+        justify-content: flex-start;
+        padding: 70px 0 0 0;
+    }
+
+.nav.active,
+.header.fixed .nav.active{
+    right: 0;
+    transition: all 0.3s ease 0s;
+}    
+    
+    
+    .nav__link,
+    .header.fixed .nav__link{
+        padding: 30px 20px;
+        font-size: 20px;
+    }
+    
+    
+    
+    .header.fixed .header__inner .btn{
+        display: none;
+    }
+    .workshop__content__icon img{
+        margin-right: 20px;
+    }
+    .workshop__content{
+        padding-left:40px;
+    }
+    
+    
+.room__icon__n_number img{
+    
+    margin-right: 10px;
+ 
+    
+}
+    
+}
+@media (max-width: 950px) {
+    .slider{
+        margin-top: 40px;
+    } 
+    
+    .nav__link:hover{
+  
+    color: #46413d;
+}
+    body.lock{
+        overflow: hidden;
+    }
+    .container{
+        max-width:750px;
+    }
+    .workshop__content__icon img{
+        margin-top: 15px;
+    }
+    .gallery__item{
+        
+        width: 50%;
+    }
+     .slider__reviews .slick-arrow.slick-next{
+        margin-right:150px;
+    }
+    .slider__reviews .slick-arrow.slick-prev{
+        margin-left:150px;
+    }
+    
+    
+    .contact__text .section_title:after{
+    margin-bottom: 15px;   
+    }
+    
+    .contact__text{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        
+        
+    }
+    .num_mail{
+        width: 50%;
+        margin-right: 50px;
+    }
+    .location{
+        
+        width: 50%;
+        margin-top: 0;
+    }
+    .contact__map{
+        width: 100%;
+    }
+    
+    .contact__map__img{
+        position: relative;
+    }
+    .workshop__content .section_title:after{
+        margin-bottom: 15px;
+    }
+
+    .services__body .btn {
+        width: 200px;
+    }    
+    .service-header .btn{
+        display: none;
+    }
+    .logo{
+    
+    text-align: right;
+}
+    
+}
+@media (max-width: 800px) { 
+    .container{
+        max-width:90%;
+    }
+    .about__picture {
+    width: 100%;
+}
+.about__picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.about__text {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20PX;
+
+
+}
+
+
+.about__text .section_title:after{
+    margin-bottom: 10px;
+}
+
+
+.features{
+    justify-content: center;
+}
+
+
+     
+    .contact__text .section_title{
+        font-size:26px;
+    }
+    .contact__map__img{
+        height:80%;
+    }
+
+    .workshop{
+        margin-top: 30px;
+    }
+    .workshop__photo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .workshop__photo__img{
+       right: auto;
+        
+    }
+    .workshop__content__icon img{
+        height:50px;
+    }
+    .section_title.mob{
+        display: block;
+        margin-top: 0;
+    }
+    .workshop__content .section_title{
+        display: none
+    }
+    .workshop__content{
+        width: 100%;
+        margin-top: 15px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .workshop__content__icon img{
+        height: 80px;
+        margin:20px 70px 0 0;
+    }
+    .workshop__content__icon img:last-child{
+        margin-right: 0;    
+    }
+    .section_title{
+        margin-top:40px;
+    }
+    .services__item{
+        width:50%;
+    }
+    .slider__reviews{
+        width: 80%;
+    }
+    .slider__reviews .slick-arrow.slick-prev{
+        margin-left:30px;
+    }
+    .slider__reviews .slick-arrow.slick-next{
+        margin-right:30px;
+    }
+    
+    .tabs__nav{
+        margin-bottom: 15px;
+    }
+    .tab{
+/*    display: inline-flex;*/
+        flex-direction: column-reverse;
+    }
+    .tab.is-active{
+        flex-direction: column-reverse;
+/*    display: inline-flex;*/
+    }
+    
+    .tabs__content{
+
+    width: 100%;
+    padding: 0 ;
+
+}
+
+.tabs__content .section_title:after{
+    margin: 5px 0px 15px;
+    
+}
+
+.tabs__content p{
+    margin:15px 0;
+   
+    
+}
+.room__icon{
+    margin-bottom: 20px;
+    
+}
+
+  
+
+.tabs__picture{
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+
+
+  
+    .slider-service{
+        width: 100%;
+    }  
+    .services__body__content{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+@media (max-width: 570px) {
+    .features__item{
+        width:50%;
+     }
+    .nav__link, .header.fixed .nav__link {
+    
+    font-size: 26px;
+    }
+    .intro{
+        text-align: center;
+    }
+    .intro__title{
+        font-size:50px;
+    }
+    .intro__subtitle{
+        font-size:24px;
+    }
+/*
+    .slider__img{
+        height:400px;
+    }
+*/
+    .slider .slick-arrow{
+        width: 10%;
+        
+    }
+   
+    .contact__map__img{
+        height:100%;
+        width: 100%;
+    }
+    .slider__reviews .slick-arrow.slick-prev{
+        margin-left:0;
+    }
+    .slider__reviews .slick-arrow.slick-next{
+        margin-right:0;
+    }
+   
+    .btn__reviews .btn {
+        width:150px;
+        font-size:14px;
+    }
+    
+    .services__item{
+        width:100%;   
+    }
+    .contact__text{
+        display:block;
+    }
+    .num_mail{
+        width: 100%;
+    }
+    .location{
+        width: 100%;    
+    }
+    .workshop__banner{
+        
+        padding: 20px 20px;
+        
+    }
+    
+    .gallery__item{
+        height: 200px;
+    }
+    .quots_l{
+        height: 70px;
+    }
+    .quots_r{
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    .input__room{
+        margin-bottom: 0;
+    }
+    .input__room__item{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    input, button { -webkit-appearance: none;}
+    .popup__inner .btn{
+        
+        width: 100%;
+    }
+    
+    .tabs-nav__item{
+        font-size:16px;
+    }
+    .intro__rooms__inner h3{
+        font-size:24px;   
+    }
+    
+    .small__slider .slick-arrow{
+        width: 26px;
+        height: 26px;
+        margin-top: -13px;
+    }
+    
+    .service__item {
+    width: 50%;
+}
+}
+@media (max-width: 425px){
+    .intro__title{
+        font-size:45px;
+    }
+    .about{
+        margin-top: 30px;
+    }
+
+    .section_title::after{
+        margin-bottom: 10px;
+    }
+    .services__item{
+        padding-bottom:5px;
+    }
+    
+    
+    .workshop__content__icon img{
+        margin-right: 50px;
+    }
+    .quots_l{
+        height:50px;
+    }
+    .quots_r{
+        height:50px;
+        
+    }
+    .tabs-nav__item{
+        font-size:14px;
+    }
+    .intro__rooms__inner h3{
+        font-size:20px;   
+    }
+     .small__slider .slick-arrow{
+        width: 25px;
+        height: 15px;
+        margin-top: -10px;
+    }
+     .service__item {
+         width: 100%;
+    }
+    .service__items{
+        font-size: 30px;
+    }
+    .service__more{
+        font-size: 30px;
+    }  
+
+}

@@ -1,0 +1,72 @@
+//====================================== contacts ======================================
+
+.contact{
+    /*    display: flex;*/
+        
+        margin-top: 60px;
+        background: url('../img/contact/fon.jpg') center no-repeat;
+        background-size:  cover;
+        padding: 50px 0;
+    }
+    
+        
+    .contact__info{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        overflow: hidden;
+    }
+    .contact__text{
+        
+        width: 40%;
+        
+    }
+    
+    .contact__text .section_title{
+        margin: 0;
+        text-align: left;
+        color: #fcfcfc
+    }
+    
+    .contact__text .section_title:after{
+        margin: 5px 0 30px;
+    }
+    .location{
+        margin-top: 50px;
+    }
+    
+    .contact__item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .contact__item a{
+        color: #deb06f;
+        margin-left: 20px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .contact__item p{
+        margin-left: 20px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fcfcfc;
+    }
+    .contact__map{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        
+     
+    }
+    .contact__map__img{
+        position: absolute;
+        top: 50%;
+        height: 100%;
+        
+        transform: translateY(-50%);
+        
+    }
