@@ -217,6 +217,13 @@
     
     text-align: right;
 }
+.slider-service{
+    width: 100%;
+}  
+.services__body__content{
+    width: 100%;
+    margin-top: 0;
+}
     
 }
 @media (max-width: 800px) { 
@@ -230,48 +237,39 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
 .about__text {
     width: 100%;
     padding-left: 0;
     margin-top: 20PX;
-
-
 }
-
 
 .about__text .section_title:after{
     margin-bottom: 10px;
 }
 
-
 .features{
     justify-content: center;
 }
-
-
-     
-    .contact__text .section_title{
+.contact__text .section_title{
         font-size:26px;
     }
-    .contact__map__img{
+.contact__map__img{
         height:80%;
     }
-
-    .workshop{
+.workshop{
         margin-top: 30px;
     }
-    .workshop__photo{
+.workshop__photo{
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    .workshop__photo__img{
+.workshop__photo__img{
        right: auto;
         
     }
-    .workshop__content__icon img{
+.workshop__content__icon img{
         height:50px;
     }
     .section_title.mob{
@@ -355,13 +353,7 @@
 
 
   
-    .slider-service{
-        width: 100%;
-    }  
-    .services__body__content{
-        width: 100%;
-        margin-top: 0;
-    }
+ 
 }
 @media (max-width: 570px) {
     .features__item{

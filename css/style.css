@@ -1431,6 +1431,10 @@ p.input {
   text-align: center;
 }
 
+:root {
+  --topContentHeight: 0px ;
+}
+
 .service-header {
   position: fixed;
   /*    display: block;*/
@@ -1627,6 +1631,28 @@ p.input {
 
 .workshop____icon img {
   height: 80px;
+}
+
+.top__content {
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.topContent {
+  height: var(--topContentHeight);
+  overflow-y: scroll;
+}
+
+.topContent::-webkit-scrollbar {
+  width: 4px;
+}
+
+.topContent::-webkit-scrollbar-track {
+  background: #deb06f;
+}
+
+.topContent::-webkit-scrollbar-thumb {
+  background: #46413d;
 }
 
 @media (max-width: 1300px) {
@@ -1872,6 +1898,15 @@ p.input {
   .logo {
     text-align: right;
   }
+
+  .slider-service {
+    width: 100%;
+  }
+
+  .services__body__content {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 @media (max-width: 800px) {
   .container {
@@ -2020,15 +2055,6 @@ p.input {
   .tabs__picture {
     width: 100%;
     margin-bottom: 15px;
-  }
-
-  .slider-service {
-    width: 100%;
-  }
-
-  .services__body__content {
-    width: 100%;
-    margin-top: 0;
   }
 }
 @media (max-width: 570px) {

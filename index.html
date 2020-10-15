@@ -23,8 +23,7 @@
 
             <nav class="nav">
                 <a class="nav__link" href="#" data-scroll="#about">Про нас</a>
-                <a class="nav__link" href="#" data-scroll="#services">пропонуємо</a>
-
+                <a class="nav__link" href="#" data-scroll="#services">Пропонуємо</a>
                 <a class="nav__link" href="#" data-scroll="#rooms">Проживання</a>
                 <a class="nav__link" href="#" data-scroll="#reviews">Відгуки</a>
                 <a class="nav__link" href="#" data-scroll="#contacts">Контакти</a>
@@ -215,7 +214,7 @@
                     <a href="service_church.html" class="service__more">
                         Детальніше →
                     </a>
-                    <p>Відвідати історичні пам’ятки</p>
+                    <p>Туристичні маршрути</p>
                     <img src="img/services/7.1.jpg" alt="">
                     <div class="darc__block"></div>
                 </div>
@@ -470,7 +469,25 @@
     </div>
 </div>    <!--script
 ====================================================-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 100, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
     <script src="js/script.js" type="text/javascript"></script>
 
 

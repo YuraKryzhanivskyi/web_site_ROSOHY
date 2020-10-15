@@ -1,4 +1,7 @@
 // ==================================== separate__services =====================================
+:root{
+    --topContentHeight: 0px
+}
 .service-header {
     position: fixed;
 /*    display: block;*/
@@ -109,8 +112,6 @@ display: flex;
    margin: 5px 0 30px;
 }
 
-
-
 .services__body__content p {
     color: #46413d;
     font-size: 16px;
@@ -167,4 +168,25 @@ display: flex;
 }
 .workshop____icon img{
     height: 80px;
+}
+
+.top__content{
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+.topContent{
+    height: var(--topContentHeight);
+    overflow-y: scroll;
+}
+.topContent::-webkit-scrollbar{
+    width: 4px;
+}
+
+.topContent::-webkit-scrollbar-track{
+    background: #deb06f;
+    
+}
+.topContent::-webkit-scrollbar-thumb{
+    background: #46413d;
+    
 }
