@@ -45,13 +45,9 @@ $(document).ready(function () {
 
     //---------------------------------slick slider-------------------------------- 
 
-
     $('.slider-1 ').slick({
         infinite: true,
-
-
         slidesToShow: 1,
-
     });
 
 
@@ -59,7 +55,6 @@ $(document).ready(function () {
         infinite: true,
         speed: 1000,
         autoplay: true,
-
         easing: 'linear',
         draggable: false,
         touchThreshold: 10,
@@ -68,6 +63,7 @@ $(document).ready(function () {
         pauseOnHover: false,
 
     });
+
     $('.slider-service').slick({
 
         infinite: true,
@@ -131,7 +127,7 @@ $(document).ready(function () {
 
 
 
-
+    //---------------------------------sep rooms----------------------------------  
     $('.larg__slider').slick({
         infinite: false,
 
@@ -143,7 +139,6 @@ $(document).ready(function () {
 
     $('.small__slider').slick({
         infinite: false,
-
         slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.larg__slider',
