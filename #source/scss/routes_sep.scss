@@ -41,7 +41,7 @@
         
         display: flex;
         margin-bottom: 70px;
-        height: 350px;
+        height: 400px;
         overflow: hidden;
         align-items: center;
         cursor: pointer;
@@ -108,6 +108,7 @@
     &__picture {
         overflow: hidden;
         width: 60%;
+        height: 100%;
         
         & img{
                 height: 100%;

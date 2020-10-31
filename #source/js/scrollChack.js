@@ -14,14 +14,16 @@ function blockHeight() {
     let contentBlock = document.querySelector(".top__content")
     let contentBlockBottom = document.querySelector(".bottom__content")
 
+
     if (pageScrollHeight > pageHeight && pageWidth > 950) {
         contentBlock.classList.add("topContent")
         let topContent = document.querySelector(".topContent")
-        let heightB = pageHeight - contentBlockBottom.offsetHeight - 200;
+        let heightB = pageHeight - contentBlockBottom.offsetHeight - 300;
 
         topContent.style.setProperty('--topContentHeight', heightB + 'px')
 
     } else {
         contentBlock.classList.remove("topContent")
     }
+
 }

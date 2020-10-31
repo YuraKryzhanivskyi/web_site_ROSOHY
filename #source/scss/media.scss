@@ -139,12 +139,11 @@
     
     
 .room__icon__n_number img{
-    
-    margin-right: 10px;
- 
-    
+        margin-right: 10px;
 }
-    
+.intro__routes__inner h3{
+    padding: 0 100px;
+}
 }
 @media (max-width: 950px) {
     .slider{
@@ -341,19 +340,41 @@
     margin-bottom: 20px;
     
 }
-
-  
-
 .tabs__picture{
     width: 100%;
     margin-bottom: 15px;
 
 }
 
-
-
-  
- 
+.routes{
+    &__item,
+    &__item.block__inv{
+        flex-direction: column;
+        .routes__caption{
+            padding: 0;
+        }
+    }
+    &__caption,
+    &__picture{
+        width: 100%;
+    }
+    &__caption{
+        padding: 0;
+        margin-bottom: 15px;
+    }
+&__title {
+    
+    &.section_title{
+        font-size: 24px;
+    }
+    &.section_title::after{
+        margin-bottom: 15px;
+    }
+}
+}
+.intro__routes__inner h3{
+    padding: 0 10px;
+}
 }
 @media (max-width: 570px) {
     .features__item{
@@ -454,6 +475,12 @@
     
     .service__item {
     width: 50%;
+}
+.intro__routes__inner h1{
+    font-size: 40px;
+}
+.intro__routes__inner h3{
+    font-size: 24px;
 }
 }
 @media (max-width: 425px){

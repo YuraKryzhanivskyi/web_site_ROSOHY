@@ -1274,7 +1274,7 @@ h3.rooms__price {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 70px;
-  height: 350px;
+  height: 400px;
   overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1335,6 +1335,7 @@ h3.rooms__price {
 .routes__picture {
   overflow: hidden;
   width: 60%;
+  height: 100%;
 }
 .routes__picture img {
   height: 100%;
@@ -1938,6 +1939,10 @@ p.input {
   .room__icon__n_number img {
     margin-right: 10px;
   }
+
+  .intro__routes__inner h3 {
+    padding: 0 100px;
+  }
 }
 @media (max-width: 950px) {
   .slider {
@@ -2176,6 +2181,33 @@ p.input {
     width: 100%;
     margin-bottom: 15px;
   }
+
+  .routes__item, .routes__item.block__inv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .routes__item .routes__caption, .routes__item.block__inv .routes__caption {
+    padding: 0;
+  }
+  .routes__caption, .routes__picture {
+    width: 100%;
+  }
+  .routes__caption {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .routes__title.section_title {
+    font-size: 24px;
+  }
+  .routes__title.section_title::after {
+    margin-bottom: 15px;
+  }
+
+  .intro__routes__inner h3 {
+    padding: 0 10px;
+  }
 }
 @media (max-width: 570px) {
   .features__item {
@@ -2291,6 +2323,14 @@ p.input {
 
   .service__item {
     width: 50%;
+  }
+
+  .intro__routes__inner h1 {
+    font-size: 40px;
+  }
+
+  .intro__routes__inner h3 {
+    font-size: 24px;
   }
 }
 @media (max-width: 425px) {
