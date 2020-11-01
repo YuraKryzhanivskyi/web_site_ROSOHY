@@ -80,6 +80,15 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fcfcfc;
 }
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #deb06f;
+}
+body::-webkit-scrollbar-thumb {
+  background: #46413d;
+}
 
 .container {
   position: relative;
@@ -122,8 +131,8 @@ body {
 
 .social {
   position: fixed;
-  right: 0;
-  bottom: 5%;
+  right: 10px;
+  bottom: 25px;
   z-index: 100000;
 }
 
@@ -131,6 +140,10 @@ body {
   display: block;
   opacity: 0.7;
   overflow: hidden;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .social__item:hover {
@@ -464,7 +477,7 @@ ul.slick-dots {
   z-index: 10000;
   position: fixed;
   height: auto;
-  padding: 5px 5px;
+  padding: 5px 10px;
   background-color: #deb06f;
   -webkit-box-shadow: 0px 1px 5px #46413d;
           box-shadow: 0px 1px 5px #46413d;
@@ -1360,6 +1373,8 @@ h3.rooms__price {
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .popup:target {
@@ -1423,7 +1438,7 @@ h3.rooms__price {
   margin-bottom: 10px;
   border: 1px solid #deb03f;
   border-radius: 2px;
-  padding: 10px;
+  padding: 20px;
   background-color: transparent;
 }
 
@@ -1438,11 +1453,8 @@ p.input {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  /*justify-content: space-around;*/
-  margin-bottom: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .input__room__item {
@@ -1450,9 +1462,8 @@ p.input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*justify-content: center;*/
-  /*align-items: center;*/
-  width: 25%;
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 .input__room__item .room__input {
@@ -1465,7 +1476,7 @@ p.input {
 .label__check {
   position: relative;
   padding-left: 25px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 300;
 }
 
@@ -1553,7 +1564,7 @@ p.input {
 }
 
 :root {
-  --topContentHeight: 0px ;
+  --topContentHeight: 0px;
 }
 
 .service-header {
@@ -1564,7 +1575,6 @@ p.input {
   background-color: #deb06f;
   -webkit-box-shadow: 0px 1px 5px #46413d;
           box-shadow: 0px 1px 5px #46413d;
-  margin-bottom: 20px;
   z-index: 20;
 }
 
@@ -1662,16 +1672,16 @@ p.input {
 }
 
 .services__body__content {
-  margin-top: 40px;
   width: 30%;
   overflow: hidden;
-  padding: 30px;
+  padding: 50px 20px 0;
 }
 
 .services__body__content .section_title {
   display: inline-block;
   text-align: left;
   margin-top: 0;
+  padding-top: 20px;
 }
 
 .services__body__content .section_title:after {
@@ -1683,7 +1693,6 @@ p.input {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
-  margin-bottom: 30px;
 }
 
 .service-header .btn {
@@ -1696,6 +1705,10 @@ p.input {
   height: 40px;
 }
 
+.bottom__content {
+  padding: 20px 0 30px 0;
+}
+
 .services__details {
   color: #46413d;
   font-size: 16px;
@@ -1705,6 +1718,7 @@ p.input {
 
 .services__details .section_title {
   font-size: 20px;
+  padding: 0;
 }
 
 .services__details .section_title:after {
@@ -1755,8 +1769,7 @@ p.input {
 }
 
 .top__content {
-  padding-right: 10px;
-  margin-bottom: 20px;
+  padding: 0 10px 10px 0;
 }
 
 .topContent {
@@ -2030,7 +2043,7 @@ p.input {
 
   .services__body__content {
     width: 100%;
-    margin-top: 0;
+    padding: 0 20px;
   }
 }
 @media (max-width: 800px) {
@@ -2294,11 +2307,6 @@ p.input {
     margin-bottom: 0;
   }
 
-  .input__room__item {
-    width: 50%;
-    margin-bottom: 15px;
-  }
-
   input, button {
     -webkit-appearance: none;
   }
@@ -2386,5 +2394,41 @@ p.input {
 
   .service__more {
     font-size: 30px;
+  }
+
+  .slider-service,
+.slider__item {
+    height: 70vh;
+  }
+
+  .slider__item img {
+    height: 70vh;
+  }
+
+  .popup__content {
+    padding: 15px;
+  }
+
+  .input {
+    padding: 10px;
+  }
+
+  .input-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .input__data {
+    width: 100%;
+  }
+  .input__data:first-child {
+    margin-bottom: 10px;
+  }
+
+  .input__room__item {
+    width: 100%;
+    margin-bottom: 13px;
   }
 }

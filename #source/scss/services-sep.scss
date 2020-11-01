@@ -1,6 +1,7 @@
 // ==================================== separate__services =====================================
 :root{
-    --topContentHeight: 0px
+    --topContentHeight: 0px;
+    
 }
 .service-header {
     position: fixed;
@@ -9,7 +10,7 @@
     height: auto;
     background-color: #deb06f;
     box-shadow: 0px 1px 5px #46413d;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
     z-index: 20;
     
     
@@ -95,10 +96,10 @@ display: flex;
 
 .services__body__content {
     
-    margin-top: 40px;
+    //margin-top: 40px;
     width: 30%;
     overflow: hidden;
-    padding: 30px;
+    padding: 50px 20px 0;
 }
 
 
@@ -106,6 +107,7 @@ display: flex;
     display: inline-block;
     text-align: left;
     margin-top: 0;
+    padding-top: 20px;
 }
 
 .services__body__content .section_title:after{
@@ -117,14 +119,18 @@ display: flex;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
 }
+
 .service-header .btn{
     display: flex;
     background-color: #46413d;
     color: #deb06f;
     width: 180px;
     height: 40px;
+}
+.bottom__content{
+    padding: 20px 0 30px 0 ;
 }
 .services__details{
     color: #46413d;
@@ -134,6 +140,7 @@ display: flex;
 }
 .services__details .section_title{
     font-size: 20px;
+    padding: 0;
 }
 .services__details .section_title:after{
     width: 100%;
@@ -171,8 +178,8 @@ display: flex;
 }
 
 .top__content{
-    padding-right: 10px;
-    margin-bottom: 20px;
+    padding:0 10px 10px 0;
+    
 }
 .topContent{
     height: var(--topContentHeight);

@@ -7,7 +7,22 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #fcfcfc;
+    &::-webkit-scrollbar{
+        width: 5px;
+    }
+    
+    &::-webkit-scrollbar-track{
+        background: #deb06f;
+        
+    }
+    &::-webkit-scrollbar-thumb{
+        background: #46413d;
+        
+    }
 }
+
+
+
 
 //====================================== Conteiner ======================================
 .container{
@@ -48,17 +63,21 @@ body {
 //====================================== social ======================================
 .social{
 position: fixed;
-right: 0;
-bottom: 5%;
+right: 10px;
+bottom: 25px;
 z-index: 100000;        
 }
 .social__item{
 display:block;   
 opacity: 0.7;
 overflow: hidden;
+border-radius: 20px;
+transition: all .3s linear;
 }
 .social__item:hover{
 opacity: 1;
+//transform: scale(1.1);
+//border-radius: 0;
 }
 
 //====================================== section_title ======================================

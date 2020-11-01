@@ -219,10 +219,13 @@
 .slider-service{
     width: 100%;
 }  
+
 .services__body__content{
     width: 100%;
-    margin-top: 0;
+    padding: 0 20px;
+
 }
+
     
 }
 @media (max-width: 800px) { 
@@ -450,10 +453,7 @@
     .input__room{
         margin-bottom: 0;
     }
-    .input__room__item{
-        width: 50%;
-        margin-bottom: 15px;
-    }
+    
     input, button { -webkit-appearance: none;}
     .popup__inner .btn{
         
@@ -530,4 +530,33 @@
         font-size: 30px;
     }  
 
+    .slider-service,
+.slider__item{
+    height: 70vh;
+}
+.slider__item img{
+    height: 70vh;
+    //width: 100%;
+}
+
+.popup__content{
+    padding: 15px;
+   
+}
+.input{
+    padding: 10px;
+}
+.input-data{
+    flex-direction: column;;
+}
+.input__data{
+    width: 100%;
+    &:first-child{
+        margin-bottom: 10px;
+    }
+}
+.input__room__item{
+    width: 100%;
+    margin-bottom: 13px;
+}
 }

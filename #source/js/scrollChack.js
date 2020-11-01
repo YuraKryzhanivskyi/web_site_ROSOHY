@@ -13,12 +13,14 @@ function blockHeight() {
 
     let contentBlock = document.querySelector(".top__content")
     let contentBlockBottom = document.querySelector(".bottom__content")
+    let serviceHeader = document.querySelector(".service-header")
+    let sectionTitle = document.querySelector(".section_title")
 
 
     if (pageScrollHeight > pageHeight && pageWidth > 950) {
         contentBlock.classList.add("topContent")
         let topContent = document.querySelector(".topContent")
-        let heightB = pageHeight - contentBlockBottom.offsetHeight - 300;
+        let heightB = pageHeight - contentBlockBottom.offsetHeight - serviceHeader.offsetHeight - sectionTitle.offsetHeight;
 
         topContent.style.setProperty('--topContentHeight', heightB + 'px')
 

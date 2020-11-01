@@ -10,6 +10,8 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.8s ease 0s;
+    overflow-y: auto;
+    overflow-x: hidden;
     
 }
 .popup:target{
@@ -22,13 +24,16 @@
     align-items: center;
     justify-content: center;
     
-    padding: 30px 10px
+    padding: 30px 10px;
+    
+    
 }
 .popup__content{
     position: relative;
     background-color:#fcfcfc;
     width: 500px;
     padding: 30px;
+    
 }
 .popup__close{
     position: absolute;
@@ -51,9 +56,11 @@
     height: 100%;
     top: 0;
     left: 0;
+   
 }
 .popup__content .section_title{
     margin-top: 0;
+    
 }
 
 .input{
@@ -62,7 +69,7 @@
     margin-bottom: 10px;
     border: 1px solid #deb03f;
     border-radius: 2px;
-    padding: 10px;
+    padding: 20px;
     background-color: transparent;
 }
 
@@ -75,21 +82,16 @@ p.input {
 
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    /*justify-content: space-around;*/
-    margin-bottom: 20px;
+    //align-items: flex-start;
+    justify-content: space-around;
+    
       
 }
 .input__room__item{
     position: relative;
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    width: 25%;
-
-    
-    
-
+    width: 50%;
+    margin-bottom: 20px;
 }
 
 .input__room__item .room__input{
@@ -100,7 +102,7 @@ p.input {
 .label__check{
     position: relative;
     padding-left: 25px;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 300;
     
 }
