@@ -119,9 +119,9 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   text-transform: uppercase;
   background-color: #deb06f;
-  -webkit-transition: background 0.1s linear;
-  -o-transition: background 0.1s linear;
-  transition: background 0.1s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   cursor: pointer;
 }
 
@@ -1286,39 +1286,39 @@ h3.rooms__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 120px;
   height: 400px;
-  overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+.routes__item:nth-of-type(2n) .routes__btn {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.routes__item:hover .routes__btn {
+  background-color: #cb9f61;
 }
 .routes__item:last-child {
   margin-bottom: 0;
 }
-.routes__more {
-  opacity: 0;
+.routes__item:after {
+  bottom: -60px;
+  content: "";
+  display: block;
   position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #deb06f;
+}
+.routes__btn {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 3;
-  color: #DEB06F;
-  font-size: 30px;
-  font-weight: 300;
-  outline: #DEB06F 2px solid;
-  outline-offset: -10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .routes__item.block__inv {
   -webkit-box-orient: horizontal;
@@ -1330,6 +1330,13 @@ h3.rooms__price {
   padding: 0 15px 0 40px;
 }
 .routes__caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 40%;
   padding: 0 40px 0 15px;
 }
@@ -2203,6 +2210,12 @@ p.input {
   }
   .routes__item .routes__caption, .routes__item.block__inv .routes__caption {
     padding: 0;
+  }
+  .routes__item {
+    margin-bottom: 70px;
+  }
+  .routes__item:after {
+    bottom: -35px;
   }
   .routes__caption, .routes__picture {
     width: 100%;

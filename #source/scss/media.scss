@@ -357,6 +357,14 @@
             padding: 0;
         }
     }
+    &__item{
+        margin-bottom: 70px;
+        &:after{
+            //margin: 5px auto 30px;
+            bottom: -35px;
+           
+        }
+    }
     &__caption,
     &__picture{
         width: 100%;
