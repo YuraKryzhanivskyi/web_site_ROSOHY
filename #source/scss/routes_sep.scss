@@ -40,18 +40,17 @@
     &__item {
         display: flex;
         margin-bottom: 120px;
-        height: 400px;
+        //height: 400px;
+        height: auto;
         //overflow: hidden;
-        align-items: center;
-        cursor: pointer;
+        
+        //cursor: pointer;
         &:nth-of-type(2n) .routes__btn{
             align-self: flex-start;
         }
-        &:hover .routes__btn{
-            background-color: #cb9f61;
-        }
-        
-       
+        //&:hover .routes__btn{
+        //    background-color: #cb9f61;
+        //}
         &:last-child{
             margin-bottom: 0;
         }
@@ -65,38 +64,34 @@
             height: 1px;
             background-color: #deb06f;
         }
+        &.block__inv{
+            flex-direction:row-reverse;   
+            .routes__caption {
+               padding: 0 15px 0 40px;
+               
+            }
+        }   
     }
     &__btn{
-        margin-top: 10px;
+        margin-top: 20px;
         display: flex;
-        align-self: flex-end;}
-    
-   
-
-    &__item.block__inv{
-        flex-direction:row-reverse;   
-        .routes__caption {
-           padding: 0 15px 0 40px;
-           
-        }
-    }   
+        align-self: flex-end;
+    }
 
     &__caption {
         display: flex;
-        flex-direction: column;
+        //flex-direction: column;
         width: 40%;
         padding: 0 40px 0 15px;
-        
+        align-items: center;
     }
 
     &__title {
         text-transform: uppercase;
         &.section_title{
             margin-top: 0;
-            
         }
     }
-    
 
     &__excerpt {
         font-weight: 300;
@@ -106,15 +101,18 @@
     }
 
     &__picture {
-        overflow: hidden;
-        width: 60%;
-        height: 100%;
-        
+        position: relative;
+        flex: 0 0 60%;
+        padding: 0 0 40% 0;
+
         & img{
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                transition:all .2s linear;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            transition:all .2s linear;
         }
     }
 }

@@ -104,12 +104,12 @@
         top: 0;
         right: -100%;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         overflow: auto;
         align-items:center;
         background-color: #deb06f;
-        justify-content: flex-start;
-        padding: 70px 0 0 0;
+        justify-content: space-around;
+        padding: 20% 0;
     }
 
 .nav.active,
@@ -122,7 +122,7 @@
     .nav__link,
     .header.fixed .nav__link{
         padding: 30px 20px;
-        font-size: 20px;
+        font-size: 40px;
     }
     
     
@@ -362,8 +362,8 @@
         &:after{
             //margin: 5px auto 30px;
             bottom: -35px;
-           
         }
+
     }
     &__caption,
     &__picture{
@@ -372,6 +372,13 @@
     &__caption{
         padding: 0;
         margin-bottom: 15px;
+    }
+    &__btn{
+        position: absolute;
+        bottom: 5px;
+        margin: 0;
+        right: 0;
+        z-index: 2;
     }
 &__title {
     
@@ -566,5 +573,15 @@
 .input__room__item{
     width: 100%;
     margin-bottom: 13px;
+}
+.routes{
+    &__btn{
+        width: 130px;
+        font-size: 14px;
+        background-color: rgba(222,176,111,.8);
+        backdrop-filter: blur(20px);
+        color: #46413d;
+        
+    }
 }
 }

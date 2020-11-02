@@ -454,9 +454,9 @@ ul.slick-dots {
   top: 0;
   left: 0;
   z-index: 1000;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .header__logo {
@@ -478,9 +478,11 @@ ul.slick-dots {
   position: fixed;
   height: auto;
   padding: 5px 10px;
-  background-color: #deb06f;
   -webkit-box-shadow: 0px 1px 5px #46413d;
           box-shadow: 0px 1px 5px #46413d;
+  background-color: rgba(222, 176, 111, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 .header.fixed .container {
@@ -578,8 +580,12 @@ ul.slick-dots {
   font-size: 14px;
 }
 
-.header.fixed .nav .nav__link:hover {
+.header.fixed .nav .nav__link {
   color: #46413d;
+}
+
+.header.fixed .nav .nav__link:hover {
+  color: #fcfcfc;
   -webkit-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
@@ -670,6 +676,9 @@ ul.slick-dots {
   color: #deb06f;
   font-size: 30px;
   font-weight: 300;
+  background-color: rgba(70, 65, 61, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -1287,18 +1296,11 @@ h3.rooms__price {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 120px;
-  height: 400px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
+  height: auto;
 }
 .routes__item:nth-of-type(2n) .routes__btn {
   -ms-flex-item-align: start;
       align-self: flex-start;
-}
-.routes__item:hover .routes__btn {
-  background-color: #cb9f61;
 }
 .routes__item:last-child {
   margin-bottom: 0;
@@ -1312,14 +1314,6 @@ h3.rooms__price {
   height: 1px;
   background-color: #deb06f;
 }
-.routes__btn {
-  margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
 .routes__item.block__inv {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -1329,16 +1323,23 @@ h3.rooms__price {
 .routes__item.block__inv .routes__caption {
   padding: 0 15px 0 40px;
 }
+.routes__btn {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
 .routes__caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 40%;
   padding: 0 40px 0 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .routes__title {
   text-transform: uppercase;
@@ -1353,13 +1354,18 @@ h3.rooms__price {
   color: #46413d;
 }
 .routes__picture {
-  overflow: hidden;
-  width: 60%;
-  height: 100%;
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  padding: 0 0 40% 0;
 }
 .routes__picture img {
+  position: absolute;
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: all 0.2s linear;
@@ -1918,16 +1924,15 @@ p.input {
     top: 0;
     right: -100%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     background-color: #deb06f;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding: 70px 0 0 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20% 0;
   }
 
   .nav.active,
@@ -1941,7 +1946,7 @@ p.input {
   .nav__link,
 .header.fixed .nav__link {
     padding: 30px 20px;
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .header.fixed .header__inner .btn {
@@ -2224,6 +2229,13 @@ p.input {
     padding: 0;
     margin-bottom: 15px;
   }
+  .routes__btn {
+    position: absolute;
+    bottom: 5px;
+    margin: 0;
+    right: 0;
+    z-index: 2;
+  }
   .routes__title.section_title {
     font-size: 24px;
   }
@@ -2443,5 +2455,14 @@ p.input {
   .input__room__item {
     width: 100%;
     margin-bottom: 13px;
+  }
+
+  .routes__btn {
+    width: 130px;
+    font-size: 14px;
+    background-color: rgba(222, 176, 111, 0.8);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    color: #46413d;
   }
 }
