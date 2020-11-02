@@ -20,6 +20,60 @@ body {
         
     }
 }
+//====================================== Preloader ======================================
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    //background-color: #46413d;
+    background-color: rgba(70, 65, 61, .8);
+    backdrop-filter: blur(20px);
+    z-index: 9999999;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+    &.done{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.loader {
+    width: 70px;
+    height: 70px;
+    //border: 5px solid #deb06f;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1s pulsing infinite linear;
+
+    & img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+}
+@keyframes pulsing {
+    0% {
+      transform:translate(-50%, -50%) scale(0.8, 0.8)
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.0, 1.0);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0.8, 0.8);
+    }
+  }
+
 
 
 

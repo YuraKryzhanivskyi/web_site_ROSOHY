@@ -1,5 +1,14 @@
 
+document.body.onload = function () {
+    setTimeout(function () {
+        let preloader = document.getElementById('pagePreloader');
+        if (!preloader.classList.contains('done')) {
+            preloader.classList.add('done');
+        }
+    }, 200);
+}
 $(document).ready(function () {
+
 
     $('.link__gallery2').click(function (event) {
         $('.larg__slider').slick('goTo', 1)
