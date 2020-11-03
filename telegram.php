@@ -1,7 +1,4 @@
 <?php
-
-
-
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 $dataIn = $_POST['dataIn'];
@@ -13,7 +10,7 @@ $homeB = $_POST['homeB'];
 
 
 $token = "1368413806:AAGQSeFKbokS1FOso4nZ__hPIR3iXfFJGjs";
-$chat_id = "-334704047";
+$chat_id = "-407578350";
 
 
 $array = array($standart, $standartB, $home, $homeB,);
@@ -40,11 +37,12 @@ foreach($arr as $key => $value) {
   $txt .= "<b>".$key."</b> ".$value."%0A";
 };
 
-$send = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
-if ($send) {
-    echo "ok :)";
-} else {
-echo "Сталась помилка :(";
-}
+if ($sendToTelegram) {
+    //header('Location: thank-you.html');
+    header('Location: thankYou.html');
+  } else {
+    echo "Error";
+  }
 ?>
