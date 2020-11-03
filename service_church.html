@@ -139,42 +139,41 @@
             </a>
             <div class="section_title">Забронювати</div>
             <div class="popup__inner">
-                <form action="https://formspree.io/kruzhanivskiy@gmail.com" method="post">
+                <form action="telegram.php" method="post">
                     <div class="input__item">
-                        <input class="input" placeholder="Ім'я" name="Ім'я" type="text" id="name">
+                        <input class="input" placeholder="Ім'я" name="user_name" type="text" id="name">
 
                     </div>
                     <div class="input__item">
-                        <input class="input" placeholder="Телефон" name="Телефон" type="tel" id="phone"
+                        <input class="input" placeholder="Телефон" name="user_phone" type="tel" id="phone"
                             required="required" </div>
 
                         <div class="section_title">Тип житла</div>
                         <div class=" input__room">
                             <div class="input__room__item">
-                                <input class="room__input" name="Проживання" type="checkbox" value="Стандарт"
+                                <input class="room__input" name="standart" type="checkbox" value="Стандарт"
                                     id="standart">
                                 <label class="label__check" for="standart">Стандарт</label>
                             </div>
                             <div class="input__room__item">
-                                <input class="room__input" name="Проживання" type="checkbox" value="Стандарт2"
+                                <input class="room__input" name="standartB" type="checkbox" value="Стандарт2"
                                     id="standart2">
                                 <label class="label__check" for="standart2">Стандарт 2-х кімнатний</label>
                             </div>
                             <div class="input__room__item">
-                                <input class="room__input" name="Проживання" type="checkbox" value="Будинок" id="house">
+                                <input class="room__input" name="home" type="checkbox" value="Будинок" id="house">
                                 <label class="label__check" for="house">Будинок</label>
                             </div>
                             <div class="input__room__item">
-                                <input class="room__input" name="Проживання" type="checkbox" value="Будинок+"
-                                    id="houseP">
+                                <input class="room__input" name="homeB" type="checkbox" value="Будинок+" id="houseP">
                                 <label class="label__check" for="houseP">Будинок+</label>
                             </div>
                         </div>
                         <div class="section_title">Заїзд-Виїзд</div>
                         <div class="input-data">
-                            <input class="input__data" type="date" id="start" name="заїзд" value="" min="2020-06-06"
+                            <input class="input__data" type="date" id="start" name="dataIn" value="" min="2020-06-06"
                                 max="2021-12-31" placeholder="заїзд">
-                            <input class="input__data" type="date" id="start" name="виїзд" value="" min="2020-06-06"
+                            <input class="input__data" type="date" id="start" name="dataOut" value="" min="2020-06-06"
                                 max="2021-12-31" placeholder="заїзд">
                         </div>
                         <div class="btn-input">
