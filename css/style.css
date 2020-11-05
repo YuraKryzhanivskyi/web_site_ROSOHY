@@ -90,6 +90,69 @@ body::-webkit-scrollbar-thumb {
   background: #46413d;
 }
 
+.thank {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/home_bg.jpg) no-repeat bottom;
+  background-size: cover;
+}
+
+.thank__inner {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.thank__text {
+  margin-bottom: 10px;
+}
+
+.thank h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #deb06f;
+}
+
+.thank h2 {
+  font-size: 30px;
+  color: #fcfcfc;
+}
+
+@media (max-width: 610px) {
+  .intro__subtitle span {
+    line-height: 1.7;
+  }
+}
+@media (max-width: 350px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
 .preloader {
   position: fixed;
   left: 0;
