@@ -10,7 +10,7 @@ $homeB = $_POST['homeB'];
 
 //https://api.telegram.org/bot1368413806:AAGQSeFKbokS1FOso4nZ__hPIR3iXfFJGjs/getUpdates
 $token = "1368413806:AAGQSeFKbokS1FOso4nZ__hPIR3iXfFJGjs";
-$chat_id = "-407578350";
+$chat_id = "240106211";
 
 
 $array = array($standart, $standartB, $home, $homeB,);
